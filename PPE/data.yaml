@@ -1,0 +1,14 @@
+train: datasets/train/images
+val: datasets/valid/images
+test: datasets/test/images
+
+
+nc: 5
+names: ['boots', 'glasses', 'gloves', 'helmet', 'vest']
+
+roboflow:
+  workspace: testmeta-cikh8
+  project: ppe_1-eeazp-wcyht
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/testmeta-cikh8/ppe_1-eeazp-wcyht/dataset/1
