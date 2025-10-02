@@ -1,6 +1,6 @@
 streamlit>=1.0.0
 ultralytics
-opencv-python
+opencv-python-headless
 numpy
 torch
 torchvision
