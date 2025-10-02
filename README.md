@@ -1,4 +1,4 @@
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://your-streamlit-cloud-link.streamlit.app)
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://ppe-detection-demo.streamlit.app/)
 
 # 🦺 PPE Compliance Detection (YOLOv8 + Pose + Email Alerts)
 
@@ -16,9 +16,10 @@ It uses **YOLOv8** for detection, **optional Mask R-CNN refinement**, and **Medi
 ---
 
 ## 🎬 Demo
+
 Try the live demo on **Streamlit Cloud**:  
 
-👉 [Streamlit Cloud Demo Link](#) 
+👉 [Streamlit Cloud Demo Link](https://ppe-detection-demo.streamlit.app/) 
 
 ## 📂 Project Structure
 ```
@@ -100,6 +101,8 @@ This repository provides two main ways to run PPE detection:
 - Use for **interactive demos, image uploads, or webcam snapshots via browser**.  
 - Provides a **user-friendly interface** for quick tests.  
 - **Note:** Processes only single images or snapshots (not continuous video).  
+**Note:** For Streamlit Cloud deployment, MediaPipe-based pose features have been removed due to compatibility issues with Python 3.13. The Streamlit app now uses only YOLOv8-based PPE detection. If you need pose-based checks, use the local inference script (`inference.py`) with a compatible Python version.
+
 - Run locally with:
   ```bash
   streamlit run PPE/app.py
@@ -122,6 +125,7 @@ RECEIVER_EMAIL=receiver_email@gmail.com
 
 ### Notes:
 - For Gmail, use an **App Password** instead of your main password.  
+  [How to generate an App Password](https://share.google/IjF3y6quFB4KcocLw)
 - Multiple recipients can be supported by comma-separating emails.  
 - Streamlit Cloud users should configure these values in the app settings.  
 
@@ -139,7 +143,7 @@ python PPE/cudacheck.py
 ![Sample Detection](PPE/demo/sample_detection.png)
 
 ### Email Alert
-![Email Alert](PPE/demo/email_alert.png)
+<img src="PPE/demo/email_alert.png" alt="Email Alert" width="400"/>
 
 ## 📜 License
 This project is licensed under the **MIT License**.  
