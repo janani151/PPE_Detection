@@ -3,7 +3,7 @@ ultralytics==8.3.34
 opencv-python==4.10.0.84
 numpy==1.26.4
 torch
-torchvision==0.18.1+cpu
+torchvision>=0.23.0
 mediapipe==0.10.14
 Pillow==10.4.0
 PyYAML==6.0.2
