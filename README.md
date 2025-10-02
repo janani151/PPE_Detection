@@ -2,11 +2,12 @@
 
 # 🦺 PPE Compliance Detection (YOLOv8 + Pose + Email Alerts)
 
-![Python](https://img.shields.io/badge/Python-3.10--3.12-blue?logo=python)  
-![Platform](https://img.shields.io/badge/OS-Windows%20%7C%20Linux-green?logo=linux)  
-![Framework](https://img.shields.io/badge/Framework-YOLOv8-orange?logo=github)  
-![License](https://img.shields.io/badge/License-MIT-lightgrey)  
-![Status](https://img.shields.io/badge/Status-Active-brightgreen)  
+<!-- Badges -->
+![Python](https://img.shields.io/badge/Python-3.10--3.12-blue) 
+![OS](https://img.shields.io/badge/OS-Windows%20%7C%20Linux-yellowgreen) 
+![Framework](https://img.shields.io/badge/Framework-YOLOv8-orange) 
+![License](https://img.shields.io/badge/License-MIT-green) 
+![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 
 This repository provides a **Personal Protective Equipment (PPE) monitoring system** that detects whether safety gear such as **helmet, gloves, vest/jacket, goggles, and boots** are properly worn.  
 
@@ -17,13 +18,7 @@ It uses **YOLOv8** for detection, **optional Mask R-CNN refinement**, and **Medi
 ## 🎬 Demo
 Try the live demo on **Streamlit Cloud**:  
 
-👉 [Streamlit Cloud Demo Link](#) *(replace `#` with your deployed app URL)*  
-
-Here’s an example of PPE detection in action:  
-
-![Demo GIF](demo/demo.gif)  
-
----
+👉 [Streamlit Cloud Demo Link](#) 
 
 ## 📂 Project Structure
 ```
@@ -37,7 +32,7 @@ PPE/
 ├── models/            # Auxiliary model configs (pose, face, etc.)
 ├── requirements.txt   # Python dependencies
 ├── .env.example       # Environment variable template
-└── demo/              # Demo assets (GIFs, screenshots)
+└── demo/              # Demo assets (Output screenshots)
 ```
 
 ---
@@ -139,8 +134,12 @@ python PPE/cudacheck.py
 ---
 
 ## 📸 Example Outputs
-![Sample Detection](demo/sample_detection.png)  
-![Email Alert](demo/email_alert.png)  
+
+### Sample Detection
+![Sample Detection](PPE/demo/sample_detection.png)
+
+### Email Alert
+![Email Alert](PPE/demo/email_alert.png)
 
 ## 📜 License
 This project is licensed under the **MIT License**.  
@@ -149,4 +148,4 @@ You are free to use, modify, and distribute it with attribution.
 See the [LICENSE](LICENSE) file for details.  
 
 ---
- 
+
