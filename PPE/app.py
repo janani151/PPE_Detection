@@ -15,7 +15,7 @@ from datetime import datetime
 st.title("PPE Detection Demo")
 
 # Load YOLO model
-model = YOLO(os.getenv('PPE_WEIGHTS_PATH', 'runs/train/best9/weights/best.pt'))
+model = YOLO(os.getenv('PPE_WEIGHTS_PATH', 'PPE/best.pt'))
 
 # Email configuration (main area)
 with st.sidebar:
