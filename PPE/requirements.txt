@@ -1,6 +1,7 @@
 streamlit>=1.0.0
 ultralytics
 opencv-python
+# opencv-python-headless
 # Uncomment if using inference script
 #mediapipe
 numpy
